@@ -1,0 +1,145 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.admin-panel {
+    border: 1px solid #000;
+    border-radius: 20px;
+    padding: 30px;
+    width: 80%;
+    max-width: 600px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.admin-panel h1 {
+    margin: 0;
+    color: #000;
+    font-size: 24px;
+}
+
+.logout-button, .add-user-button {
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    background-color: #fff;
+    cursor: pointer;
+    width: 100%;
+    max-width: 200px; /* Adjust width as needed */
+    margin: 0 auto; /* Center align the button */
+    display: block; /* Ensure button doesn't stretch */
+    text-align: center; /* Center text inside button */
+}
+
+.logout-button:hover, .add-user-button:hover {
+    background-color: #e6e6e6;
+}
+
+.search-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.search-container input {
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 10px 0 0 10px;
+    outline: none;
+    width: 100%;
+    max-width: 200px;
+}
+
+.search-container button {
+    padding: 10px;
+    border: 1px solid #000;
+    border-left: none;
+    border-radius: 0 10px 10px 0;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.user-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.user-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-item input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    outline: none;
+    background-color: #f0f0f0;
+}
+
+.user-item a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.user-item button {
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    background-color: #fff;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.user-item button:hover {
+    background-color: #e6e6e6;
+}
+
+.add-user-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .admin-panel {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .admin-panel h1 {
+        font-size: 20px;
+    }
+
+    .search-container input {
+        max-width: 100%;
+    }
+
+    .user-item input {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .user-item button {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
+

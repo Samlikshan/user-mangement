@@ -1,0 +1,135 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #fff; /* White background */
+}
+
+.container {
+    border: 1px solid #000; /* Black border */
+    border-radius: 20px;
+    padding: 30px;
+    max-width: 90%;
+    background-color: #fff; /* White background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.edit-user-form {
+    background-color: #fff; /* White background */
+    padding: 30px;
+    text-align: center;
+}
+
+.edit-user-form h2 {
+    margin-bottom: 30px;
+    color: #000; /* Black text */
+    font-size: 24px; /* Increased font size */
+}
+
+.edit-user-form input {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
+    border: 1px solid #000; /* Black border */
+    border-radius: 10px;
+    background-color: #fff; /* White background */
+    color: #000; /* Black text */
+    font-size: 18px; /* Increased font size */
+    box-sizing: border-box;
+}
+
+.edit-user-form input::placeholder {
+    color: #000; /* Black placeholder text */
+}
+
+.edit-user-form p {
+    margin: 15px 0;
+    font-size: 16px; /* Increased font size */
+    color: #000; /* Black text */
+}
+
+.edit-user-form p a {
+    color: #000; /* Black text */
+    text-decoration: none;
+    border-bottom: 1px solid #000; /* Black underline */
+}
+
+.edit-user-form p a:hover {
+    color: #007BFF;
+}
+
+.edit-user-form button {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #000; /* Black border */
+    border-radius: 10px;
+    background-color: #fff; /* White background */
+    color: #000; /* Black text */
+    font-size: 18px; /* Increased font size */
+    cursor: pointer;
+}
+
+.edit-user-form button:hover {
+    background-color: #e6e6e6;
+}
+
+.role-selection {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    margin: 15px 0; /* Add margin for spacing */
+}
+
+.role-selection input[type="radio"] {
+    margin-right: -30px; /* Adjust spacing between radio button and label */
+}
+
+.role-selection label {
+    font-size: 16px; /* Adjust label font size */
+    margin-right: 20px; /* Adjust spacing between labels */
+    display: flex;
+    align-items: center; /* Center align label text vertically with the radio button */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    .edit-user-form {
+        padding: 20px;
+    }
+
+    .edit-user-form h2 {
+        font-size: 20px;
+    }
+
+    .edit-user-form input {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    .edit-user-form p {
+        font-size: 14px;
+    }
+
+    .edit-user-form button {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    .role-selection {
+        flex-direction: column; /* Stack radio buttons vertically on small screens */
+        align-items: center;
+    }
+
+    .role-selection label {
+        margin-right: 0; /* Remove right margin for vertical alignment */
+        margin-bottom: 10px; /* Add bottom margin for spacing */
+    }
+}
+

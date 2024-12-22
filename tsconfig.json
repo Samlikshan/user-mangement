@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "commonjs",
+    "outDir": "./dist", // Output compiled files to dist folder
+    "rootDir": "./src", // Set the root of the source files
+    "strict": true,
+    "esModuleInterop": true,
+    // "esModuleInterop": true,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true
+  },
+  "include": [
+    "src/**/*.ts", // Include all .ts files in src folder
+    "src/types/**/*"
+  ]
+}

@@ -1,0 +1,107 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #fff; /* White background */
+}
+
+.container {
+    border: 1px solid #000; /* Black border */
+    border-radius: 20px;
+    padding: 30px;
+    max-width: 90%;
+    background-color: #fff; /* White background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.login-form {
+    background-color: #fff; /* White background */
+    padding: 30px;
+    text-align: center;
+}
+
+.login-form h2 {
+    margin-bottom: 30px;
+    color: #000; /* Black text */
+    font-size: 24px; /* Increased font size */
+}
+
+.login-form input {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
+    border: 1px solid #000; /* Black border */
+    border-radius: 10px;
+    background-color: #fff; /* White background */
+    color: #000; /* Black text */
+    font-size: 18px; /* Increased font size */
+    box-sizing: border-box;
+}
+
+.login-form input::placeholder {
+    color: #000; /* Black placeholder text */
+}
+
+.login-form p {
+    margin: 15px 0;
+    font-size: 16px; /* Increased font size */
+    color: #000; /* Black text */
+}
+
+.login-form p a {
+    color: #000; /* Black text */
+    text-decoration: none;
+    border-bottom: 1px solid #000; /* Black underline */
+}
+
+.login-form p a:hover {
+    color: #007BFF;
+}
+
+.login-form button {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #000; /* Black border */
+    border-radius: 10px;
+    background-color: #fff; /* White background */
+    color: #000; /* Black text */
+    font-size: 18px; /* Increased font size */
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background-color: #e6e6e6;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    .login-form {
+        padding: 20px;
+    }
+
+    .login-form h2 {
+        font-size: 20px;
+    }
+
+    .login-form input {
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    .login-form p {
+        font-size: 14px;
+    }
+
+    .login-form button {
+        padding: 12px;
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%= title %>
+    </title>
+    <link rel="stylesheet" href="/styles/index.css">
+</head>
+
+<body>
+    <div class="home-panel">
+        <h1>Home</h1>
+        <p>Welcome Mr <%=user.username%>
+        </p>
+        <a href="/logout"><button class="logout-button">Logout</button></a>
+    </div>
+    <script src="/scripts/index.js" defer></script>
+</body>
+
+</html>

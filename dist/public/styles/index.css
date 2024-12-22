@@ -1,0 +1,43 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.home-panel, .admin-panel {
+    border: 1px solid #000;
+    border-radius: 20px;
+    padding: 30px;
+    width: 80%;
+    max-width: 600px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.home-panel h1, .admin-panel h1 {
+    margin: 0;
+    color: #000;
+    font-size: 24px;
+}
+
+.logout-button, .add-user-button {
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    background-color: #fff;
+    cursor: pointer;
+    width: 100%;
+    max-width: 150px;
+    margin: 20px auto 0; /* Center align the button and add margin on top */
+    display: block; /* Ensure button doesn't stretch */
+    text-align: center; /* Center text inside button */
+}
+
+.logout-button:hover, .add-user-button:hover {
+    background-color: #e6e6e6;
+}

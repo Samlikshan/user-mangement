@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='stylesheet' href="/styles/admin.css" />
+
+  <title>
+
+    <%= title %>
+  </title>
+  <script src="/scripts/admin.js" defer></script>
+</head>
+
+<body>
+  <div class="admin-panel">
+    <div class="header">
+      <h1>Admin Panel</h1>
+      <a href="/logout"><button class="logout-button">Logout</button></a>
+    </div>
+    <form action="/admin/search">
+      <div class="search-container">
+        <input type="text" placeholder="..search" name="query">
+        <button type="submit">🔍</button>
+
+      </div>
+    </form>
+    <div class="user-list">
+      <% users.forEach ((user)=> {%>
+        <div class="user-item">
+          <input type="text" value="<%=user.username%>" readonly>
+          <a href="/admin/edit-user?userId=<%=user._id%>">✏️</button></a>
+          <a href="/admin/delete?userId=<%=user._id%>"><button class="delete-button">🗑️</button></a>
+        </div>
+        <%}); %>
+          <div class="add-user-button-container">
+            <a href="/admin/add-user"><button class="add-user-button">Add User</button></a>
+          </div>
+    </div>
+  </div>
+</body>
+
+
+</html>
